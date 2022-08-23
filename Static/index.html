@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicons -->
+    <link rel="icon" type="image/x-icon" href="Static/img/favicon.ico" />
+    <!-- Font awesome icons cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css for navbar -->
+    <link rel="stylesheet" href="Static/style/navbar.css">
+    <link rel="stylesheet" href="Static/style/banner.css">
+    <link rel="stylesheet" href="Static/style/card.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>FreeKaMall</title>
+</head>
+<style>
+    
+    
+    .title {
+        text-align: left;
+        font: normal normal bold 15px/23px Roboto;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        color: #373737;
+        opacity: 1;
+    }
+</style>
+
+<body style="background-color: #F6F6F6;">
+    <header>
+        <div class="container">
+            <input type="checkbox" name="" id="chk1">
+            <div class="logo"><img src="Static/img/fkm-logo.png"></div>
+            <div class="search-box">
+                <form action="">
+                    <input type="text" name="search" placeholder="Search..">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-store"></i> Top Categoris</a></li>
+                <li> <a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Top Coupnes</a></li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-bell"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+
+            </ul>
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="banner">
+            <img src="Static/img/banner.webp" alt="banner">
+        </div>
+    </section>
+    <section>
+        <div id="texts" style="text-align: center;
+        font: normal normal medium 32px/38px Roboto;
+        letter-spacing: 0px;
+        color: #565656;
+        opacity: 1;">Buy 1 Mega Millions Play And Get 2 Free</div>
+        <div id="heading" style="text-align: center;
+        font: normal normal medium 32px/38px Roboto;
+        letter-spacing: 0px;
+        color: #565656;
+        opacity: 1;">Lorem Ipsum Dummy Text</div>
+        <div id="tree">
+            <ul>
+                <li><button type="button" onclick="live()">Live</button></li>
+                <li><button type="button" onclick="upcomming()">Upcoming</button></li>
+                <li><button type="button" onclick="results()">Results</button></li>
+            </ul>
+        </div>
+
+
+        <!-- <table style="display: grid; grid-template-columns:1fr 1fr;grid-column-gap:1px;grid-row-gap:1px;">
+                <tr style="margin-bottom: 20px;">
+                  <th>Today Match</th>
+                  <th>Tomorrow Match</th>
+                </tr>
+            
+                <tr>
+                    <td>20-SEP-2020, 07:30 PM</td>
+                    <td>20-SEP-2020, 07:30 PM</td>
+                </tr>
+              </table> -->
+
+
+    </section>
+    <section id="cards1">
+        <div class="row2" style="margin-bottom: 20px;">
+            <div class="column3">
+                <div class="card2" style="width: 100%;">
+
+                    <p>Today Match</p>
+                    
+                  
+                    <h5>20-SEP-2020, 07:30 PM</h5>
+                  
+                    <p style="text-align : center;
+                    font-size: 13px;
+                    font: normal normal medium 19px/23px Roboto;
+                    letter-spacing: 0px;
+                    color: #565656;
+                    opacity: 1">1st IPL Matc, Sep 20 2020, New Delhi </p>
+                    <br>
+                 
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <p id="contery" class="title">Delhi Capitals</p>
+                        <br>
+                     
+                        
+                        <p id="score" class="title">154/7 (19.1)</p>
+                    </div>
+                    <div style="display: flex; justify-content:space-between; align-items : center;" id="title">
+                        <p id="contery" class="title">Delhi Capitals</p>
+                        <br>
+                        
+                        <p id="score" class="title">154/7 (19.1)</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column3">
+                <div class="card2">
+
+                    <p>Tomorrow Match</p>
+                
+                    <h5>20-SEP-2020, 07:30 PM</h5>
+                   
+
+                    <p style="text-align: center;
+                    font-size: 13px;
+                    font: normal normal medium 19px/23px Roboto;
+                    letter-spacing: 0px;
+                    color: #565656;
+                    opacity: 1">1st IPL Matc, Sep 20 2020, New Delhi </p>
+                    <br>
+                    
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <p id="contery" class="title">Delhi Capitals</p>
+                        <br>
+                      
+                        <p id="score" class="title">154/7 (19.1)</p>
+                    </div>
+                    <div style="display: flex; justify-content:space-between; align-items : center;" id="title">
+                        <p id="Match" class="title">Delhi Capitals</p>
+                        <!-- <p id="title">154/7 (19.1)</p> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+    <section id="cards1">
+        <div>
+            <p style="text-align: left;
+            font: normal normal normal 25px/30px Roboto;
+            letter-spacing: 0px;
+            color: #707070;
+            opacity: 1;">Top Stores</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/amazon-removebg-preview.png" width="100%" height="50vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/mantra-removebg-preview.png" width="100%" height="50vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/bigbazar-removebg-preview.png" width="100%" height="50vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/flip-removebg-preview.png" width="100%" height="50vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/grfres1-removebg-preview.png" width="100%" height="50vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/jockey-removebg-preview.png" width="100%" height="47vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 15px;">
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/grfres1-removebg-preview.png" width="100%" height="50vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/bigbazar-removebg-preview.png" width="100%" height="50vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/amazon-removebg-preview.png" width="100%" height="50vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/jockey-removebg-preview.png" width="100%" height="47vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/flip-removebg-preview.png" width="100%" height="50vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3><img src="Static/img/mantra-removebg-preview.png" width="100%" height="50vh"></h3>
+                    <p>Rs. 250 Caseback</p>
+                    <span>Some text</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cards1">
+        <div>
+            <p style="text-align: left;
+            font: normal normal normal 25px/30px Roboto;
+            letter-spacing: 0px;
+            color: #707070;
+            opacity: 1;">Top Cashback Deals</p>
+        </div>
+        <div class="row1">
+            <div class="column1">
+                <div class="card1">
+                    <img src="Static/img/p1-removebg-preview.png" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <p style="font-size: 20px; color: #F27935;">₹ 152 <span><del
+                                    style="font-size: 12px; color: #8B8B8B;">Rs 200</del></span> </p>
+                        <img src="Static/img/amazon-removebg-preview.png" width="30%" height="30px">
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="#" type="button">SHOP NOW</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column1">
+                <div class="card1">
+                    <img src="Static/img/p2-removebg-preview.png" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <p style="font-size: 20px; color: #F27935;">₹ 152 <span><del
+                                    style="font-size: 12px; color: #8B8B8B;">Rs 200</del></span> </p>
+                        <img src="Static/img/amazon-removebg-preview.png" width="30%" height="30px">
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="#" type="button">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column1">
+                <div class="card1">
+                    <img src="Static/img/p3-removebg-preview.png" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <p style="font-size: 20px; color: #F27935;">₹ 152 <span><del
+                                    style="font-size: 12px; color: #8B8B8B;">Rs 200</del></span> </p>
+                        <img src="Static/img/amazon-removebg-preview.png" width="30%" height="30px">
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="#" type="button">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column1">
+                <div class="card1">
+                    <img src="Static/img/p4-removebg-preview.png" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <p style="font-size: 20px; color: #F27935;">₹ 152 <span><del
+                                    style="font-size: 12px; color: #8B8B8B;">Rs 200</del></span> </p>
+                        <img src="Static/img/amazon-removebg-preview.png" width="30%" height="30px">
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="#" type="button">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row1" style="margin-top: 10px;">
+            <div class="column1">
+                <div class="card1">
+                    <img src="Static/img/p5-removebg-preview.png" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <p style="font-size: 20px; color: #F27935;">₹ 152 <span><del
+                                    style="font-size: 12px; color: #8B8B8B;">Rs 200</del></span> </p>
+                        <img src="Static/img/amazon-removebg-preview.png" width="30%" height="30px">
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="#" type="button">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column1">
+                <div class="card1">
+                    <img src="Static/img/p6-removebg-preview.png" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <p style="font-size: 20px; color: #F27935;">₹ 152 <span><del
+                                    style="font-size: 12px; color: #8B8B8B;">Rs 200</del></span> </p>
+                        <img src="Static/img/amazon-removebg-preview.png" width="30%" height="30px">
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="#" type="button">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column1">
+                <div class="card1">
+                    <img src="Static/img/p7-removebg-preview.png" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <p style="font-size: 20px; color: #F27935;">₹ 152 <span><del
+                                    style="font-size: 12px; color: #8B8B8B;">Rs 200</del></span> </p>
+                        <img src="Static/img/amazon-removebg-preview.png" width="30%" height="30px">
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="#" type="button">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column1">
+                <div class="card1">
+                    <img src="Static/img/p8-removebg-preview.png" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <p style="font-size: 20px; color: #F27935;">₹ 152 <span><del
+                                    style="font-size: 12px; color: #8B8B8B;">Rs 200</del></span> </p>
+                        <img src="Static/img/amazon-removebg-preview.png" width="30%" height="30px">
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="#" type="button">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="cards1">
+        <div>
+            <p style="text-align: left;
+            font: normal normal normal 25px/30px Roboto;
+            letter-spacing: 0px;
+            color: #707070;
+            opacity: 1;">IPL Related News</p>
+        </div>
+        <div class="row2" style="margin-bottom: 20px;">
+            <div class="column2">
+                <div class="card2">
+                    <img src="Static/img/ipl1.webp" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <br>
+                    <br>
+                    <hr style="color: #707070;">
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <img src="Static/img/clock-removebg-preview.png" width="20px" height="20px"><span>10 Days
+                            ago</span>
+                        <p style="text-decoration: underline;
+                    font: normal normal medium 17px/29px Roboto;
+                    letter-spacing: 0px;
+                    color: #F27935;
+                    opacity: 1;">Read More </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column2">
+                <div class="card2">
+                    <img src="Static/img/ipl2.jpg" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <br>
+                    <br>
+                    <hr style="color: #707070;">
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <img src="Static/img/clock-removebg-preview.png" width="20px" height="20px"><span>10 Days
+                            ago</span>
+                        <p style="text-decoration: underline;
+                    font: normal normal medium 17px/29px Roboto;
+                    letter-spacing: 0px;
+                    color: #F27935;
+                    opacity: 1;">Read More </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column2">
+                <div class="card2">
+                    <img src="Static/img/ipl3.jpg" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <br>
+                    <br>
+                    <hr style="color: #707070;">
+
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <img src="Static/img/clock-removebg-preview.png" width="20px" height="20px"><span>10 Days
+                            ago</span>
+                        <p style="text-decoration: underline;
+                    font: normal normal medium 17px/29px Roboto;
+                    letter-spacing: 0px;
+                    color: #F27935;
+                    opacity: 1;">Read More </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column2">
+                <div class="card2">
+                    <img src="Static/img/ipl4.webp" width="100%" height="100vh">
+                    <p>Top 10 Best Seller Footwears That You Must Buy This Season !!</p>
+                    <br>
+                    <br>
+                    <hr style="color: #707070;">
+
+                    <div style="display: flex; justify-content:space-between; align-items : center;">
+                        <img src="Static/img/clock-removebg-preview.png" width="20px" height="20px"><span>10 Days
+                            ago</span>
+                        <p style="text-decoration: underline;
+                    font: normal normal medium 17px/29px Roboto;
+                    letter-spacing: 0px;
+                    color: #F27935;
+                    opacity: 1;">Read More </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>I Hope You Like This Page<br>
+            <a href="freekamall22@gmail.com">freekamall22@gmail.com</a>
+        </p>
+    </footer>
+    <script>
+        function upcomming(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.getElementById("contery").innerHTML= this.responseText;
+                }
+            }
+
+            xhttp.open('GET',"Static/name.txt",true);
+            xhttp.send()
+
+        }
+        function live(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.getElementById("contery").innerHTML= this.responseText;
+                }
+            }
+
+            xhttp.open('GET',"Static/data.txt",true);
+            xhttp.send()
+        }
+        function results(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.getElementById("score").innerHTML= this.responseText;
+                }
+            }
+
+            xhttp.open('GET',"Static/score.txt",true);
+            xhttp.send()
+        }
+    </script>
+</body>
+
+</html>
